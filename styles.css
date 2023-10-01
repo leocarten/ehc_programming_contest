@@ -1,0 +1,167 @@
+body {
+    background: radial-gradient(circle, rgb(9, 1, 31), black);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.navbar {
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Change text color of links on hover */
+.navbar-nav .nav-link:hover {
+  color: yellow; /* Change the color to white when hovering */
+}
+
+.images{
+  height: 150px;
+  border-radius: 5px;
+  border: 3px solid rgb(153, 221, 153);
+}
+
+
+h1 {
+    background-color: transparent !important; /* or specify your desired background color */
+}
+
+.main_body{
+    color: green;
+}
+
+.navbar-brand,
+.navbar-toggler,
+.navbar-nav,
+.nav-link,
+.form-control,
+.btn {
+    font-family: inherit; /* Inherits the font from the parent .navbar class */
+}
+
+.typing-container {
+    font-size: 20px;
+}
+#constant-text,
+#typing-text {
+    display: inline-block; /* Use "inline" or "inline-block" for inline display */
+    color: rgb(193, 193, 4);
+}
+
+.footer-basic {
+    padding:40px 0;
+    background-color: transparent !important;
+    color:#dcdedf;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    background: radial-gradient(circle, rgb(219, 218, 218), rgb(39, 38, 38));
+
+  }
+
+  .round_image{
+    border-radius: 5px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: transparent !important;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(63, 63, 63);
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(7, 6, 48);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: rgb(4, 75, 19);
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
