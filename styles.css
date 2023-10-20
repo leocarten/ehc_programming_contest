@@ -18,6 +18,16 @@ body {
   border: 3px solid rgb(153, 221, 153);
 }
 
+.key_background {
+  color: rgba(255, 255, 0, 0.3); 
+  /*background-image: repeating-linear-gradient(315deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 3px, transparent -19px, transparent 5px);
+  background-size: 6px;
+  background-color: rgba(29, 25, 104, 0.421); */
+  /* background-color: #e5e5f7; */
+  opacity: 1;
+  background-image: linear-gradient(45deg, #070735 50%, #050529 50%);
+  background-size: 10px 10px;
+}
 
 h1 {
     background-color: transparent !important; /* or specify your desired background color */
