@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Ethical Hacking Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+
+<!-- NAV BAR -->
+<section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="background-color: transparent!important;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ethical Hacking Club</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+            <!-- <a class="nav-link" href="#">The contest</a> -->
+            <a class="nav-link active" aria-disabled="true">The contest</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="#">The contest</a> -->
+                <a class="nav-link disabled" aria-disabled="true">Events</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="#">The contest</a> -->
+                <a class="nav-link disabled" aria-disabled="true">Guest Speakers</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Login
+            </a>
+            <ul class="dropdown-menu">
+                <a class="nav-link disabled" aria-disabled="true">Login</a>
+                <li><hr class="dropdown-divider"></li>
+                <a class="nav-link disabled" aria-disabled="true">Create Account</a>
+            </ul>
+            </li>
+            <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+    </div>
+    </nav>
+</section>
+
+<!-- Automatic Typing -->
+<section>
+    <div class="container">
+        <div class="mt-5">
+            <div class="typing-container">
+                <p>
+                    <span style="color: green;" id="constant-text">Question 2: </span>
+                    <span style="color: yellow;" id="constant-text"> How many people can come aboard? </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Question 1 -->
+<section>
+    <div class="container">
+        <div class="mt-2">
+            <h5 class="main_body"><span style="font-weight: bold;">>></span> Captain Cypher wanted to bring as many people as possible to help him dig up the treasure. Unfortunately, Captain Cypher had to sail quite far to reach the digging spot. There is a long line of people who want to join the boat to find the treasure, but Captain Cypher knows his boat can only hold 10,000 additional pounds. Luckily, Captain Cypher came prepared as he brought a scale to weigh each person in line as they entered the boat.</h5>
+            <h5 class="main_body mt-4"><span style="font-weight: bold;">>></span> For simplicity, each person in line is separated by a comma. So: </h5>
+            <div class="question_example">
+                <h5 class="question_example">- The series <span class="character">250, 150, 200</span> would represent 3 people with a total weight of 600 pounds.  </h5>
+                <h5 class="question_example">- The series <span class="character">175, 150, 225, 300</span> would represent 4 people with a total weight of 850 pounds.  </h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Example 1 -->
+<section>
+    <div class="container">
+        <div class="mt-4">
+            <h5 class="main_body"><span style="font-weight: bold;">>></span> As soon as a person steps on to the scale, if the total weight does not exceed 10,000 pounds, they are immediately accepted on the voyage. In other words, Captain Cypher is not worried about trying to optimize the amount of people. For example:</h5>
+            <div class="question_example">
+                <h5 class="question_example">- <span class="character">2500, 5000, 1000, 1050, 1300, 400</span> would represent 6 [heavy] people waiting in line, however, Captain Cypher would only accept 5 people on the voyage.</h5>
+                <h5 class="question_example">- Reason: The person who weighed <span class="character">1300</span> pounds would be rejected since <span class="character">2500+5000+1000+1050=9550</span>, which leaves only 450 availble pounds. Hence, the person weighing 1300 pounds was denied, but the person weighing 400 pounds was accepted</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- The actual input -->
+<section>
+    <div class="container">
+        <div class="mt-4">
+            <h5 class="main_body"><span style="font-weight: bold;">>></span> Your puzzle input</h5>
+            <div class="question_example">
+                <h5 class="question_example"><span class="character">[most likely a download-able txt file]</span></h5>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<!-- Submit -->
+<section>
+    <div class="container">
+        <div class="mt-4">
+            <h5 class="main_body"><span style="font-weight: bold;">>></span> Knowing the boat can only hold an additional 10,000 pounds, how many people can Captain Cypher accept on his voyage?</h5>
+            <!-- <div class="question_example">
+                <h5 class="question_example"><span class="character">Random sequence of characters produced by the server [most likely a download-able txt file].</span></h5>
+            </div> -->
+            <h5 class="main_body">Captain Cypher's can afford to bring <input type="text" id="treasureDepth" placeholder="Answer"> additional people.</h5>
+            <button class="submit_button">Submit</button>
+        </div>
+    </div>
+</section>
+</section>
+
+<!-- Go to question 2 -->
+<!-- <section>
+    <div class="container">
+        <div class="mt-4">
+            <a href="" style="text-decoration: none;"><h5 class="top_heading_for_questions">cd Question 2 >> </h5></a>
+        </div>
+    </div>
+</section> -->
+
+
+<!-- Footer -->
+<section>
+    <div class="mt-5">
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://discord.gg/KM7E9SUbU3" target="_blank"><i style="color: white;" class="fa-brands fa-discord"></i></a>     
+                    <a href="" target="_blank"><i style="color: white;" class="fa-brands fa-twitter"></i></a>     
+                    <a href="" target="_blank"><i style="color: white;" class="fas fa-envelope"></i></a>     
+
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Ethical Hacking Club Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Programming Contest</a></li>
+                    <li class="list-inline-item"><a href="#">Club Events</a></li>
+                </ul>
+                <p class="copyright">Made with <i style="color: red;" class="fa-solid fa-heart"></i> by: Leo Carten, David Albert, Matt Wagner, and Abraham Abrams</p>
+                
+            </footer>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
